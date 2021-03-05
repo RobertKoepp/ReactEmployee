@@ -8,6 +8,8 @@ function App() {
    <div>
       <Wrapper>
      <Header/>
+     <Dataarea/>
+     
     </Wrapper> 
    </div>
   

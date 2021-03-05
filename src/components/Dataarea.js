@@ -71,7 +71,7 @@ export default class DataArea extends Component {
     this.setState({ filteredUsers: filteredList });
   }
   componentDidMount() {
-    API.getUsers().then(results => {
+    API.searchUsers().then(results => {
       this.setState({
         users: results.data.results,
         filteredUsers: results.data.results
@@ -81,9 +81,9 @@ export default class DataArea extends Component {
   render() {
     return (
       <>
-        <Nav handleSearchChange={this.handleSearchChange} />
+        <NavBar handleSearchChange={this.handleSearchChange} />
         <div className="data-area">
-          <DataTable
+          <DataGrid
             headings={this.headings}
             users={this.state.filteredUsers}
             handleSort={this.handleSort}
