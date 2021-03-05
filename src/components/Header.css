@@ -1,4 +1,10 @@
 .header {
   background-color: tan;
   color: white;
+  font-family: "Patua One", cursive;
+}
+
+.wrapper {
+  background-color: transparent;
+  font-family: "Asap Condensed", sans-serif;
 }
